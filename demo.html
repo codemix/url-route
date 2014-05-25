@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>url-router Demo</title>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="url-router.html">
+
+</head>
+<body unresolved>
+
+  <p>An example of using <code>&lt;url-router></code>:</p>
+
+  <template is="url-router" pattern="/<controller>">
+    <h2>Controller Only: {{controller}}</h2>
+  </template>
+
+  <template is="url-router" pattern="/<controller>/<action>">
+    <h2>Controller + Action: {{controller}} + {{action}}</h2>
+  </template>
+
+  <template is="url-router" pattern="/<controller>/<action>/<id:\d+>">
+    <h2>Controller + Action + ID: {{controller}} {{action}} {{id}}</h2>
+  </template>
+
+  <button id="controllerOnly">Go to Controller</button>
+  <button id="controllerAction">Go to Controller + Action</button>
+  <button id="controllerActionId">Go to Controller + Action + ID</button>
+
+  <script>
+    (function () {
+      var $ = document.querySelector.bind(document);
+
+      $('#controllerOnly').onclick = function () {
+        history.pushState({}, '', '/my-controller');
+      };
+
+      $('#controllerAction').onclick = function () {
+        history.pushState({}, '', '/my-controller/my-action');
+      };
+
+      $('#controllerActionId').onclick = function () {
+        history.pushState({}, '', '/my-controller/my-action/123');
+      };
+    })();
+  </script>
+
+</body>
+</html>

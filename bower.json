@@ -1,0 +1,20 @@
+{
+  "name": "url-router",
+  "version": "0.0.0",
+  "authors": [
+    "Charles Pick <charles@codemix.com>"
+  ],
+  "description": "URL Routing custom element.",
+  "keywords": "url router, routing, controller, polymer, web-components",
+  "main": "url-router.html",
+  "license": "MIT",
+  "homepage": "https://github.com/codemix/url-router/",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.4",
+    "chai": "~1.9.1",
+    "mocha": "~1.19.0"
+  }
+}

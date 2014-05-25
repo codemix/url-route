@@ -1,7 +1,7 @@
 url-router
 ================
 
-> NOTE: Does not actually work yet!
+> NOTE: [Does not actually work yet!](https://github.com/codemix/url-router/issues/1)
 
 See the [component page](http://codemix.github.io/url-router) for more information.
 

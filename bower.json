@@ -10,10 +10,13 @@
   "license": "MIT",
   "homepage": "https://github.com/codemix/url-route/",
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.2.4",
+    "polymer": "Polymer/polymer#~0.2.4"
+  },
+  "devDependencies": {
     "chai": "~1.9.1",
     "mocha": "~1.19.0"
   }

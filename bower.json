@@ -1,14 +1,14 @@
 {
-  "name": "url-router",
+  "name": "url-route",
   "version": "0.0.0",
   "authors": [
     "Charles Pick <charles@codemix.com>"
   ],
   "description": "URL Routing custom element.",
   "keywords": "url router, routing, controller, polymer, web-components",
-  "main": "url-router.html",
+  "main": "url-route.html",
   "license": "MIT",
-  "homepage": "https://github.com/codemix/url-router/",
+  "homepage": "https://github.com/codemix/url-route/",
   "ignore": [
     "**/.*"
   ],

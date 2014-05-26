@@ -1,9 +1,8 @@
-url-router
+url-route
 ================
 
-> NOTE: Does not actually work yet!
 
-See the [component page](http://codemix.github.io/url-router) for more information.
+See the [component page](http://codemix.github.io/url-route) for more information.
 
 
 # Usage
@@ -11,61 +10,27 @@ See the [component page](http://codemix.github.io/url-router) for more informati
 
 
 ```html
-<template is="url-router" pattern="/">
-  <h1>This is the homepage</h1>
-</template>
-
-```
-
-```html
-<template is="url-router" pattern="/about-us">
-  <h1>This is the about us page</h1>
-</template>
-
-```
-
-```html
-<template is="url-router" pattern="/pages/<page>">
-  <h1>This is the {{page}} page</h1>
-</template>
-
-```
-
-
-
-```html
-<template is="url-router" pattern="/<controller>">
-  <h1>This is the {{controller}} controller</h1>
-</template>
-
-```
-
-
-```html
-<template is="url-router" pattern="/<controller>/<action>">
-  <h1>This is the {{action}} action on the {{controller}} controller</h1>
-</template>
-
-```
-
-
-```html
-<template is="url-router" pattern="/<controller>/<action>/<pk:\d+>">
-  <h1>This is the {{action}} action on the {{controller}} controller, operating on item: {{pk}}</h1>
-</template>
-
-```
-
-### Nesting
-
-
-```html
-<template is="url-router" pattern="/pages/<page>">
-  <h1>This is the {{page}} page</h1>
-  <a href="#info">More Info</a>
-  <template is="url-router" pattern="#info">
-    <h1>This is only active when the fragment is `#info`</h1>
+<url-route pattern="/pages/<page>">
+  <template>
+    <h1>Showing the {{page}} page!</h1>
   </template>
-</template>
+</url-route>
+```
 
+```html
+<url-route pattern="/things/<num:\d+>">
+  <template>
+    <h1>Showing thing #{{num}}</h1>
+  </template>
+</url-route>
+```
+
+```html
+<url-route pattern="#info">
+  <template>
+    <div class="alert alert-info">
+      This is an info panel
+    </div>
+  </template>
+</url-route>
 ```

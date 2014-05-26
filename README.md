@@ -1,13 +1,10 @@
 url-route
 ================
 
-
 See the [component page](http://codemix.github.io/url-route) for more information.
 
 
 # Usage
-
-
 
 ```html
 <url-route pattern="/pages/<page>">

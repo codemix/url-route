@@ -1,0 +1,32 @@
+{
+  "name": "url-route",
+  "authors": [
+    "Charles Pick <charles@codemix.com>"
+  ],
+  "description": "URL Routing custom element.",
+  "keywords": "url router, routing, controller, polymer, web-components",
+  "main": "url-route.html",
+  "license": "MIT",
+  "homepage": "https://github.com/codemix/url-route/",
+  "ignore": [
+    "**/.*",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.4"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.19.0"
+  },
+  "_release": "4861138dd9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4861138dd9ab1659e21ad52192146fb26759e612"
+  },
+  "_source": "git://github.com/codemix/url-route.git",
+  "_target": "master",
+  "_originalSource": "codemix/url-route",
+  "_direct": true
+}

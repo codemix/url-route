@@ -79,7 +79,7 @@ Custom Element providing URL routing.
         this.changeEventHandler = function () {
           var changes = self.routeChanges();
           if (changes !== false) {
-            self.route = changes ? changes : null;
+            self.route = changes;
             self.render();
           }
         };
